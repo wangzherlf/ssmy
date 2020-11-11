@@ -68,5 +68,53 @@ skir_render 跳过指定文件的渲染。匹配到的文件夹将不做改动�
 
 **文章Writing**
 ```
+new_post_name 新文章的文件名称， 默认 :title.md
+default_layout   预设布局，默认post
+auto_spacing  在中文和英文之间加入空格，默认false
+titlecase     把标题转换为title case，默认false
+extrnal_link  在新标签中打开链接，默认true
+extrnal_link.enable 在新标签中打开链接, 默认true
+extrnal_link.exclude  需要排除的域名。主域名和子域名如www需要分别配置，默认[]
+filename_case 把文件名称转换为(1)小写或(2)大写， 默认0
+render_drafts 显示草稿，默认false
+post_asset_folder 启动Asset文件夹，默认false
+relative_link   把链接改为与根目录的相对地址，默认false
+future      显示未来的文章，默认true
+highlight   代码块设置
+prismjs     代码块的设置
+```
 
+**分类&标签 Category & Tags**
+```
+default_category 默认分类，默认uncategoryized
+category_map 分类别名
+tag_map      标签别名
+```
+
+**日期/时间 Date/Time**
+```
+date_format  日期格式  YYYY-MM-DD
+time_format  时间格式  HH:mm:ss
+updated_option 当Front Matter中没有指定update时updated的取值，默认mtime文件的最后修改时间
+```
+
+**分页Pagination**
+```
+per_page 每页显示的文章量(0 表示关闭分页)，默认10
+pagination_dir 分页目录，默认page
+```
+
+**扩展 Extensions**
+```
+theme  当前主题名称，值为false时禁用主题
+theme_config 主题的配置文件, 这里放置的配置会覆盖主题目录下_config.yml中的配置
+deploy  部署部分的设置
+meta_generator Meta generator标签。值为false时hexo不会在头部插入该标签
+```
+
+**包括或不包括目录和文件**
+```
+include 将包括的文件和目录，会复制到source目录下 
+exclude 忽略文件和目录
+ignore  忽略文件或目录
 ```
